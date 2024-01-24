@@ -1,0 +1,333 @@
+.header {
+  text-align: center;
+  max-height: 200px;
+  background-color: lightgray;
+  color: black;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+.searchBar {
+  margin-left: 60vw;
+  margin-top: 20px;
+  padding-left: 10px;
+  position: absolute;
+  width: 220px;
+  height: 30px;
+  font-size: medium;
+  border: 1px solid black;
+}
+
+.sidebarButtonDefault {
+  border: none;
+  color: blue;
+  padding: 10px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sidebarButtonSelected {
+  border: none;
+  color: blue;
+  padding: 10px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.sidebarButtonDefault:hover {
+  background-color: lightgray !important;
+}
+
+#Sidebar {
+  width: 200px;
+  border-right: 2px gray dashed;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  margin-right: 10px;
+}
+
+.mainContentDiv {
+  display: flex;
+  flex-direction: row;
+  min-height: 75vh;
+  font-family: Arial, sans-serif;
+}
+
+.contentDiv {
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questionsHeader {
+  display: flex; 
+  flex-direction: row; 
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.questionsHeaderLabel {
+  margin-right: 50vw; 
+  padding-left: 40px;
+}
+
+.actionButton { /*Ask question, answer question etc*/
+  font-size: 17px;
+  height: 30px;
+  max-width: 200px;
+  width: auto;
+  color: white;
+  background-color: lightseagreen;
+  border: 1px solid lightslategrey;
+  cursor: pointer;
+}
+
+.actionButtonDisabled { /*Ask question, answer question etc*/
+  font-size: 17px;
+  height: 30px;
+  max-width: 200px;
+  width: auto;
+  color: white;
+  background-color: lightgray;
+  border: 1px solid lightslategrey;
+  cursor: pointer;
+}
+
+
+#QuestionsInfoDiv { /*how many questions, sort buttons*/
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  border-bottom: 2px dashed gray; 
+  width: 82vw; 
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.sortButton {
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.sortButton:hover {
+  background-color: lightgray !important;
+}
+
+.sortButtonActive {
+  border: 1px solid black;
+  background-color: darkgray;
+  padding: 5px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.questionDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px dashed gray;
+  height: 150px;
+  padding-left: 35px;
+}
+
+.answersAndViewsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lightgray;
+  margin-right: 45px;
+}
+
+.tagsDiv { /*This is the div that contains all the tags*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.questionTitle {
+  color: blue;
+  font-size: 17px;
+  margin-right: 45px;
+  max-width: 725px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tagDiv { /*This is the div that contains tag text and styling*/
+  background-color: darkgray;
+  border-radius: 5px;
+  border: 1px solid black; 
+  padding: 6px;
+  margin-right: 10px;
+}
+
+.questionViewDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionViewHeaderDiv {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  border-bottom: 2px dashed gray;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.answersViewDiv { /*div that contains the answer containers for a question */
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  overflow: hidden auto;
+  max-height: 25vh;
+  overflow-x: hidden;
+  padding-top: 20px;
+  overflow-y: scroll;
+}
+
+.answerDiv { /*div that is the actual answer container*/
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px dashed gray;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
+.formInputViewDiv {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.input {
+  border: 1px solid black; 
+  width: 300px; 
+  height: 40px; 
+  padding-left: 10px; 
+  font-size: medium;
+}
+
+.textArea {
+  border: 1px solid black; 
+  width: 500px; 
+  height: 200px; 
+  padding: 10px; 
+  font-size: medium;
+}
+
+.tagsHeader {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 40px;
+}
+
+.tagContentDiv {
+  display: grid; 
+  grid-template-columns: 3fr 3fr 3fr; 
+  margin: auto;
+}
+
+.tagDisplayDiv {
+  background-color: white;
+  padding: 20px;
+  margin: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed gray; 
+}
+
+.tagLabel {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.tagLabel:hover {
+  cursor: pointer;
+}
+
+.WelcomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.profilePage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileQuestionsContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.profileQuestionTitleDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px dashed gray;
+  border-top: 2px dashed gray;
+}
+
+.registerInput {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  font-size: medium;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.pageButton {
+  border: 1px solid lightgray;
+  background-color: lightseagreen;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.pageButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.commentInput {
+  border: 2px solid lightseagreen;
+  width: 50vw;
+  margin-top: 10px;
+  font-size: 15px;
+  height: 100px;
+}
